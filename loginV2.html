@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="bi.png" type="image/x-icon">
+</head>
+<body>
+    <div id="alert-error" class="alert alert-error">PIN incorreto. Tente novamente.</div>
+    <div id="alert-info" class="alert alert-info">Enviando PIN para o seu email...</div>
+    <div id="alert-success" class="alert alert-success">PIN validado com sucesso!</div>
 
+    <div class="overlay">
+        <div class="form-container" id="form-container">
+            <div class="form-content" id="email-form-content">
+                <h1>LOGIN</h1>
+                <p>Acesse sua conta:</p>
+                <div class="input-container">
+                    <i class="fas fa-user"></i> 
+                    <input type="email" id="email" placeholder="E-mail">
+                </div>
+                <button id="email-button">ENVIAR PIN</button>
+            </div>
+            <div class="form-content hidden" id="pin-form-content">
+                <h1>Digite seu PIN</h1>
+                <p>Insira o PIN enviado para o seu email:</p>
+                <div class="input-container">
+                    <i class="fas fa-key"></i> 
+                    <input type="text" id="pin" placeholder="PIN">
+                </div>
+                <button id="pin-button">ENTRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
